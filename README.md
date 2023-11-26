@@ -1,6 +1,5 @@
-# RMUTT_09114330	
-Numerical Methods for Dynamical Systems
-<br>ระเบียบวิธีเชิงตัวเลขสำหรับระบบพลวัต
+# Numerical Methods for Dynamical Systems
+ระเบียบวิธีเชิงตัวเลขสำหรับระบบพลวัต
 
 
 ผู้สอน: ดร.รัฐพรหม พรหมคำ
