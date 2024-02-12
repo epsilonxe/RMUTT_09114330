@@ -59,8 +59,8 @@ Euler’s method numerical method for initial value problems; Taylor’s higher-
 | Initial-value problems for ordinary differential equations  | [Lecture](./mateials/lecture_03.pdf)/ [Workshop](./materials/workshop_03.ipynb) |
 | Boundary-value problems for ordinary differential equations  | [Lecture](./mateials/lecture_04.pdf)/ [Workshop](./materials/workshop_04.zip) |
 | MID-TERM Examination  |  |
-| Approximating eigenvalues   | [Lecture](./mateials/lecture_05.pdf)/ [Workshop](./materials/workshop_05.zip) |
-| Contruction of bifurcations and phase planes of dynamical systems    | [Lecture](./mateials/lecture_06.pdf)/ [Workshop](./materials/workshop_06.zip) |
+| Approximating eigenvalues   | [Lecture](./mateials/lecture_05.pdf)/ [Workshop](./materials/workshop_05.ipynb) |
+| Contruction of bifurcations and phase planes of dynamical systems    | [Lecture](./mateials/lecture_06.pdf)/ [Workshop](./materials/workshop_06.ipynb) |
 | Case study I: Numerical methods in discrete dynamical systems | [Download](./mateials/case_01.zip)  |
 | Case study II: numerical methods in continuous dynamical systems | [Download](./mateials/case_01.zip)  |
 | Project-based Seminar I | TBA  |

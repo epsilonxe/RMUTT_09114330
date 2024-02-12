@@ -38,3 +38,21 @@ def gen_latex_table(*args, **kvargs):
         rows += r    
     text = header1 + header2 + rows + footer    
     return text
+
+def rk(func, ini, start=0, stop=1, h=0.01, *args, **kwargs):
+    try:
+        dim = np.size(ini)
+    except:
+        dim = 1
+    t = np.arange(start, stop+h, h)
+    n = np.size(t)
+    x = np.zeros((n, dim))
+    x[0, : ] = ini
+    for i in range(n-1):
+        k1 = func(t[i], x[i, : ], *args, **kwargs)
+        k2 = func(t[i] + 0.5*h, x[i, : ] + 0.5*h*k1, *args, **kwargs)
+        k3 = func(t[i] + 0.5*h, x[i, : ] + 0.5*h*k2, *args, **kwargs)
+        k4 = func(t[i] + h, x[i, : ] + h*k3, *args, **kwargs)
+        x[i+1, :] = x[i, :] + (1/6)*(k1 + 2*k2 + 2*k3 + k4)
+    return t, x
+    
