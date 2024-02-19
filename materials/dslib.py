@@ -1,3 +1,5 @@
+import numpy as np
+
 def gen_traj(func=None, seed=0, num=10):
     '''
     Generate trajectory
@@ -53,6 +55,6 @@ def rk(func, ini, start=0, stop=1, h=0.01, *args, **kwargs):
         k2 = func(t[i] + 0.5*h, x[i, : ] + 0.5*h*k1, *args, **kwargs)
         k3 = func(t[i] + 0.5*h, x[i, : ] + 0.5*h*k2, *args, **kwargs)
         k4 = func(t[i] + h, x[i, : ] + h*k3, *args, **kwargs)
-        x[i+1, :] = x[i, :] + (1/6)*(k1 + 2*k2 + 2*k3 + k4)
+        x[i+1, :] = x[i, :] + (h/6)*(k1 + 2*k2 + 2*k3 + k4)
     return t, x
     
