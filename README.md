@@ -55,12 +55,12 @@ Euler’s method numerical method for initial value problems; Taylor’s higher-
 | Topic						| 	Class Materials 		|
 |---------------------------|---------------------------|
 | Construction of trajectories in discrete dynamical systems  | [Lecture](./materials/lecture_01.pdf)/ [Workshop](./materials/workshop_01.ipynb) |
-| Fixed-point iterative schemes with applications to dynamical systems  | [Lecture](./mateials/fixed_point_iterations.pdf)/ [Workshop](./materials/workshop_02.ipynb) |
-| Initial-value problems for ordinary differential equations  | [Lecture](./mateials/fixed_point_iterations.pdf)/ [Workshop](./materials/workshop_03.ipynb) |
-| Boundary-value problems for ordinary differential equations  | [Lecture](./mateials/lecture_04.pdf)/ [Workshop](./materials/workshop_04.zip) |
+| Fixed-point iterative schemes with applications to dynamical systems  | [Lecture](./materials/fixed_point_iterations.pdf)/ [Workshop](./materials/workshop_02.ipynb) |
+| Initial-value problems for ordinary differential equations  | [Lecture](./materials/fixed_point_iterations.pdf)/ [Workshop](./materials/workshop_03.ipynb) |
+| Boundary-value problems for ordinary differential equations  | [Lecture](./materials/lecture_04.pdf)/ [Workshop](./materials/workshop_04.zip) |
 | MID-TERM Examination  |  |
-| Approximating eigenvalues   | [Lecture](./mateials/lecture_05.pdf)/ [Workshop](./materials/workshop_05.ipynb) |
-| Contruction of bifurcations and phase planes of dynamical systems    | [Lecture](./mateials/lecture_06.pdf)/ [Workshop](./materials/workshop_06.ipynb) |
+| Approximating eigenvalues   | [Lecture](./materials/lecture_05.pdf)/ [Workshop](./materials/workshop_05.ipynb) |
+| Contruction of bifurcations and phase planes of dynamical systems    | [Lecture](./materials/lecture_06.pdf)/ [Workshop](./materials/workshop_06.ipynb) |
 | Case study I: Numerical methods in discrete dynamical systems | [Download](./materials/cases_discrete.zip)  |
 | Case study II: numerical methods in continuous dynamical systems | [Download](./materials/cases_continuous.zip)  |
 | Project-based Seminar I | TBA  |
