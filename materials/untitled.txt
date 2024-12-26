@@ -1,0 +1,127 @@
+Below is a concrete example of how to apply Picard iteration in \(\mathbb{R}^2\) to find a fixed point of a contraction mapping. We will:
+
+1. Define a function \( T : \mathbb{R}^2 \to \mathbb{R}^2 \).
+2. Show that \(T\) is a contraction (with respect to the usual Euclidean metric).
+3. Find its unique fixed point.
+4. Illustrate the iteration process.
+
+---
+
+## 1. Define the mapping
+
+Let
+\[
+T(x,y) \;=\; \bigl(\tfrac12 x + \tfrac12,\; \tfrac12 y + \tfrac12\bigr).
+\]
+
+In other words, for a point \((x,y) \in \mathbb{R}^2\),
+\[
+T\bigl(x,y\bigr)
+\;=\;
+\begin{pmatrix}
+0.5\,x + 0.5 \\
+0.5\,y + 0.5
+\end{pmatrix}.
+\]
+
+We use the standard Euclidean metric on \(\mathbb{R}^2\), 
+\[
+d\bigl((x_1,y_1),(x_2,y_2)\bigr) 
+\;=\; \sqrt{(x_1 - x_2)^2 + (y_1 - y_2)^2}.
+\]
+
+---
+
+## 2. Show that \(T\) is a contraction
+
+To show \(T\) is a contraction, we need to find a constant \(L < 1\) such that for all \((x_1,y_1), (x_2,y_2) \in \mathbb{R}^2\),
+
+\[
+d\bigl(T(x_1, y_1),\, T(x_2, y_2)\bigr)
+\;\le\; L\,d\bigl((x_1, y_1), (x_2, y_2)\bigr).
+\]
+
+First compute
+\[
+T(x_1,y_1) - T(x_2,y_2)
+\;=\; 
+\Bigl(\tfrac12 (x_1 - x_2),\; \tfrac12 (y_1 - y_2)\Bigr).
+\]
+Then
+\[
+\|\,T(x_1,y_1) - T(x_2,y_2)\,\|_2 
+\;=\; \sqrt{\Bigl(\tfrac12 (x_1 - x_2)\Bigr)^2 + \Bigl(\tfrac12 (y_1 - y_2)\Bigr)^2}
+\;=\; \tfrac12 \sqrt{(x_1 - x_2)^2 + (y_1 - y_2)^2}.
+\]
+Hence,
+\[
+d\bigl(T(x_1,y_1),\, T(x_2,y_2)\bigr)
+\;=\; \tfrac12\, d\bigl((x_1,y_1),(x_2,y_2)\bigr).
+\]
+
+We can take \(L = \tfrac12\). Since \(L = 0.5 < 1\), the map \(T\) is indeed a contraction.
+
+---
+
+## 3. Find the unique fixed point
+
+A fixed point \((x^*, y^*)\) must satisfy
+\[
+(x^*, y^*) 
+\;=\;
+\Bigl(\tfrac12 x^* + \tfrac12,\; \tfrac12 y^* + \tfrac12\Bigr).
+\]
+
+From the first component:
+\[
+x^* = \tfrac12\,x^* + \tfrac12
+\quad\Longrightarrow\quad
+\tfrac12\,x^* = \tfrac12
+\quad\Longrightarrow\quad
+x^* = 1.
+\]
+
+Similarly, from the second component:
+\[
+y^* = \tfrac12\,y^* + \tfrac12
+\quad\Longrightarrow\quad
+y^* = 1.
+\]
+
+Thus, \(\bigl(x^*,y^*\bigr) = (1,1)\). The Contraction Mapping Principle (Banach Fixed Point Theorem) guarantees that this is the **unique** fixed point of \(T\).
+
+---
+
+## 4. Use Picard iteration to approximate the fixed point
+
+The Picard iteration scheme tells us to pick **any** initial point \((x_0,y_0)\in \mathbb{R}^2\) and define:
+
+\[
+(x_{n+1},\,y_{n+1})
+\;=\; 
+T(x_n,\, y_n).
+\]
+
+We claim \((x_n, y_n) \to (1,1)\) as \(n \to \infty\). Let’s illustrate with a simple initial point, say \((x_0, y_0) = (0,0)\). Then:
+
+1. \((x_1, y_1) = T(0, 0) = (0.5,\, 0.5)\).
+2. \((x_2, y_2) = T(0.5, 0.5) = (0.5 \times 0.5 + 0.5,\; 0.5 \times 0.5 + 0.5) = (0.75,\, 0.75).\)
+3. \((x_3, y_3) = T(0.75, 0.75) = (0.5 \times 0.75 + 0.5,\; 0.5 \times 0.75 + 0.5) = (0.875,\, 0.875).\)
+
+We see the sequence \(\{(x_n, y_n)\}\) is “closing in” on \((1, 1)\). Indeed,
+\[
+\lim_{n \to \infty} (x_n, y_n) = (1,1).
+\]
+
+---
+
+## Conclusion
+
+- **Mapping**: \(T(x,y) = \bigl(0.5\,x + 0.5,\; 0.5\,y + 0.5\bigr)\).
+- **Contraction verification**: \(\|T(x_1,y_1) - T(x_2,y_2)\|_2 \le 0.5\,\|(x_1,y_1)-(x_2,y_2)\|_2\).
+- **Unique fixed point**: \((1,1)\).
+- **Picard iteration**: 
+  \[
+    (x_{n+1}, y_{n+1}) = T(x_n, y_n).
+  \]
+  This sequence converges to \((1,1)\) from any initial point \((x_0,y_0)\).

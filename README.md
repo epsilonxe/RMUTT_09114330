@@ -55,8 +55,8 @@ Euler’s method numerical method for initial value problems; Taylor’s higher-
 | Topic						| 	Class Materials 		|
 |---------------------------|---------------------------|
 | Construction of trajectories in discrete dynamical systems  | [Lecture](./materials/lecture_01.pdf)/ [Workshop](./materials/workshop_01.ipynb) |
-| Fixed-point iterative schemes with applications to dynamical systems  | [Lecture](./mateials/lecture_02.pdf)/ [Workshop](./materials/workshop_02.ipynb) |
-| Initial-value problems for ordinary differential equations  | [Lecture](./mateials/lecture_03.pdf)/ [Workshop](./materials/workshop_03.ipynb) |
+| Fixed-point iterative schemes with applications to dynamical systems  | [Lecture](./mateials/fixed_point_iterations.pdf)/ [Workshop](./materials/workshop_02.ipynb) |
+| Initial-value problems for ordinary differential equations  | [Lecture](./mateials/fixed_point_iterations.pdf)/ [Workshop](./materials/workshop_03.ipynb) |
 | Boundary-value problems for ordinary differential equations  | [Lecture](./mateials/lecture_04.pdf)/ [Workshop](./materials/workshop_04.zip) |
 | MID-TERM Examination  |  |
 | Approximating eigenvalues   | [Lecture](./mateials/lecture_05.pdf)/ [Workshop](./materials/workshop_05.ipynb) |
