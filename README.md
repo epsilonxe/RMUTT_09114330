@@ -7,7 +7,7 @@
 
 <img src='./images/phasespace.png' alt='banner' width='500'>
 
-## ปีการศึกษา 2566/2
+## ปีการศึกษา 2/2567
 รายวิชานี้ดำเนินการสอนในรูปแบบการบรรยาย ปฏิบัติการทางคอมพิวเตอร์ 
 อาจรวมถึงห้องเรียนออนไลน์หรือเป็นไปตามประกาศของทางมหาวิทยาลัยเทคโนโลยีราชมงคลธัญบุรี 
 
@@ -16,11 +16,11 @@
 
 | Section | ห้องเรียน | วัน | บรรยายทฤษฏี  | ปฏิบัติการ  |
 |--------|---------|----|---------------|---------------|
-| 01     |  รป 6-02 | จันทร์ | 13.00 - 15.00  | 15.00 - 17.00|
+| 01     |  ST1905 | พฤหัสบดี | 13.00 - 15.00  | 15.00 - 17.00|
 
-สอบกลางภาค:  21 มกราคม 2567 เวลา 13.00 - 16.00
+สอบกลางภาค:  10 มกราคม 2567 เวลา 13.00 - 16.00
 
-สอบปลายภาค:  19 มีนาคม 2567 เวลา 13.00 - 16.00
+สอบปลายภาค:  18 มีนาคม 2567 เวลา 13.00 - 16.00
 
 ### ห้องเรียนออนไลน์ Microsoft Teams
 
@@ -56,9 +56,8 @@ Euler’s method numerical method for initial value problems; Taylor’s higher-
 |---------------------------|---------------------------|
 | Construction of trajectories in discrete dynamical systems  | [Lecture](./materials/lecture_01.pdf)/ [Workshop](./materials/workshop_01.ipynb) |
 | Fixed-point iterative schemes with applications to dynamical systems  | [Lecture](./materials/fixed_point_iterations.pdf)/ [Workshop](./materials/workshop_02.ipynb) |
-| Initial-value problems for ordinary differential equations  | [Lecture](./materials/fixed_point_iterations.pdf)/ [Workshop](./materials/workshop_03.ipynb) |
+| Solutions to continuous dynamical systems | [Lecture](./materials/solution_ode.pdf)/ [Workshop](./materials/solution_ode.pdf) |
 | Boundary-value problems for ordinary differential equations  | [Lecture](./materials/lecture_04.pdf)/ [Workshop](./materials/workshop_04.zip) |
-| MID-TERM Examination  |  |
 | Approximating eigenvalues   | [Lecture](./materials/lecture_05.pdf)/ [Workshop](./materials/workshop_05.ipynb) |
 | Contruction of bifurcations and phase planes of dynamical systems    | [Lecture](./materials/lecture_06.pdf)/ [Workshop](./materials/workshop_06.ipynb) |
 | Case study I: Numerical methods in discrete dynamical systems | [Download](./materials/cases_discrete.zip)  |
@@ -66,7 +65,6 @@ Euler’s method numerical method for initial value problems; Taylor’s higher-
 | Project-based Seminar I | TBA  |
 | Project-based Seminar II | TBA  |
 | Project-based Seminar III | TBA  |
-| FINAL Examination  |  |
 
 
 
@@ -99,8 +97,6 @@ t-score = 50 + 10*(x - u)/s
 | B | 3.00 | [70, 75) |
 | B+ | 3.50 | [75, 80) |
 | A | 4.00 | [80, Inf) |
-
-
 
 
 ## เอกสารอ้างอิง
