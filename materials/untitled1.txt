@@ -1,0 +1,160 @@
+# 2-Hour Workshop
+
+## Overview
+
+**Duration:** 2 hours  
+**Objectives:**
+- Reinforce understanding of **Euler’s Method** and its derivation from **Taylor series**.
+- Practice implementing **Euler’s Method** on different ODE examples.
+- Compare numerical solutions with **exact solutions** to assess accuracy and error behavior.
+
+---
+
+## Workshop Schedule
+
+1. **Introduction and Recap (10 minutes)**  
+   - Quick review of Euler’s Method derivation from the Taylor series.
+   - Discussion on step size (\(h\)) and local vs. global error.
+
+2. **Problem 1: Exponential Growth (25 minutes)**  
+   - Apply Euler’s Method to the ODE \(\dot{x} = x\) with \(x(0)=1\).
+   - Compare numerical results with the exact solution \(x(t) = e^t\).
+
+3. **Problem 2: Logistic Growth (30 minutes)**  
+   - Apply Euler’s Method to the logistic ODE \(\dot{x} = 2x(1-x)\) with \(x(0)=0.1\).
+   - Vary the step size \(h\) to see how it affects accuracy.
+   - Discuss long-term behavior and compare with the exact solution \(\displaystyle x(t) = \frac{1}{1 + 9\,e^{-2t}}\).
+
+4. **Problem 3: Simple Harmonic Oscillator (35 minutes)**  
+   - Rewrite \(\ddot{x} + x = 0\) as a first-order system:
+     \[
+       \dot{x} = v, 
+       \quad 
+       \dot{v} = -x.
+     \]
+   - Implement Euler’s Method in vector form.
+   - Compare numerical approximations with the exact solution \(x(t) = \cos t\).
+   - Observe the energy drift phenomenon.
+
+5. **Wrap-Up and Discussion (20 minutes)**
+   - Summarize findings from each problem.
+   - Highlight the **advantages** (simplicity) and **limitations** (order of accuracy, stability) of Euler’s Method.
+   - Preview improved one-step methods (Modified Euler, Runge–Kutta).
+
+---
+
+## Detailed Workshop Activities
+
+### Introduction and Recap (10 minutes)
+
+- **Key Concept 1:** First-order Taylor expansion  
+  \[
+    x(t + h) \approx x(t) + h \, \dot{x}(t).
+  \]
+- **Key Concept 2:** Local truncation error is \(\mathcal{O}(h^2)\), but the **global** error is \(\mathcal{O}(h)\).
+- Brief Q&A on any conceptual doubts before starting the problems.
+
+---
+
+### Problem 1: Exponential Growth (25 minutes)
+
+1. **ODE and Setup:**
+   \[
+     \dot{x} = x, \quad x(0) = 1.
+   \]
+   - Choose a step size, e.g., \(h = 0.1\).
+   - Implement **Euler’s Method**:
+     \[
+       x_{n+1} = x_n + h\,x_n.
+     \]
+
+2. **Tasks:**
+   1. **Manual Calculation (Optional for a few steps)**  
+      - Compute \(x_1, x_2, \dots\) by hand to see the pattern.
+   2. **Compare** with the exact solution \(x(t) = e^t\).  
+      - **Optional**: Use Python or another tool to generate numerical approximations and plot them.
+
+3. **Discussion Points:**
+   - Does the numerical solution overestimate or underestimate the true solution?
+   - How does the error change if \(h\) is halved?
+
+---
+
+### Problem 2: Logistic Growth (30 minutes)
+
+1. **ODE and Setup:**
+   \[
+     \dot{x} = 2x(1 - x), 
+     \quad x(0) = 0.1.
+   \]
+   - Choose two different step sizes, e.g., \(h = 0.1\) and \(h = 0.01\).
+
+2. **Implementation Steps:**
+   \[
+     x_{n+1} = x_n + h \cdot 2x_n(1 - x_n).
+   \]
+
+3. **Tasks:**
+   1. **Compute** a few iterations by hand for \(h = 0.1\).
+   2. **Use a code snippet** (if allowed) to generate numerical solutions for both \(h=0.1\) and \(h=0.01\) up to \(t=2\).
+   3. **Compare** with the exact solution:
+      \[
+        x(t) = \frac{1}{1 + 9 \, e^{-2t}}.
+      \]
+   4. **Plot** both numerical and exact solutions to observe any discrepancy.
+
+4. **Discussion Points:**
+   - How does the numerical solution behave for larger \(t\)?  
+   - Observe the “S-shaped” curve typical of logistic growth.
+   - Evaluate how reducing \(h\) improves accuracy.
+
+---
+
+### Problem 3: Simple Harmonic Oscillator (35 minutes)
+
+1. **ODE and Setup:**
+   \[
+     \ddot{x} + x = 0, \quad x(0) = 1, \quad \dot{x}(0) = 0.
+   \]
+   - Rewrite as a **vector system**:
+     \[
+       \begin{pmatrix} x \\[3pt] v \end{pmatrix}'
+       =
+       \begin{pmatrix} v \\[3pt] -x \end{pmatrix}.
+     \]
+
+2. **Euler Update:**
+   \[
+     \begin{pmatrix} x_{n+1} \\ v_{n+1} \end{pmatrix}
+     =
+     \begin{pmatrix} x_n \\ v_n \end{pmatrix}
+     +
+     h \begin{pmatrix} v_n \\ -x_n \end{pmatrix}.
+   \]
+
+3. **Tasks:**
+   1. **Compute** \(\mathbf{y}_1\) and \(\mathbf{y}_2\) (where \(\mathbf{y}=(x,v)\)) manually.
+   2. **Implement** the iteration up to \(t = 2\pi\) in small steps (e.g., \(h=0.1\)).
+   3. **Compare** with the exact solution \(x(t) = \cos t\).
+   4. **Discuss** how the total “energy” \(E = x^2 + v^2\) changes over time in the numerical method vs. the exact solution.
+
+4. **Key Observation:**  
+   - Euler’s method **does not** preserve energy, so the amplitude of the oscillations drifts over time.  
+   - More advanced **symplectic** methods are preferred for long-term behavior in oscillatory problems.
+
+---
+
+### Wrap-Up and Discussion (20 minutes)
+
+- **Recap** the main learnings:
+  - **Euler’s Method** derivation from **first-order Taylor expansion**.
+  - **Local vs. Global Error** (\(\mathcal{O}(h^2)\) vs. \(\mathcal{O}(h)\)).
+  - Performance on different ODE types (exponential, logistic, harmonic).
+- **Q&A Session**:
+  - Challenges faced in calculations or coding.
+  - Potential improvements (smaller step size, or higher-order methods).
+- **Preview**:
+  - **Modified Euler** (Heun’s method), 
+  - **Midpoint method**, 
+  - or **Runge–Kutta** methods for better accuracy and stability.
+
