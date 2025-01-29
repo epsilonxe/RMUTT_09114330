@@ -57,7 +57,7 @@ Euler’s method numerical method for initial value problems; Taylor’s higher-
 | Construction of trajectories in discrete dynamical systems  | [Lecture](./materials/lecture_01.pdf)/ [Workshop](./materials/workshop_01.ipynb) |
 | Fixed-point iterative schemes with applications to dynamical systems  | [Lecture](./materials/fixed_point_iterations.pdf)/ [Workshop](./materials/workshop_02.ipynb) |
 | Solutions to continuous dynamical systems | [Lecture](./materials/solution_ode.pdf)/ [Workshop](./materials/solution_ode.pdf) |
-| Euler's method and its application | [Lecture](./materials/euler_method.pdf)/ [Workshop](./materials/workshop_03.pdf) |
+| Euler's method and its application | [Lecture](./materials/euler_method.pdf)/ [Workshop](./materials/workshop_03.ipynb) |
 | Boundary-value problems for ordinary differential equations  | [Lecture](./materials/lecture_04.pdf)/ [Workshop](./materials/workshop_04.zip) |
 | Approximating eigenvalues   | [Lecture](./materials/lecture_05.pdf)/ [Workshop](./materials/workshop_05.ipynb) |
 | Contruction of bifurcations and phase planes of dynamical systems    | [Lecture](./materials/lecture_06.pdf)/ [Workshop](./materials/workshop_06.ipynb) |
