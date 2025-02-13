@@ -58,9 +58,11 @@ Euler’s method numerical method for initial value problems; Taylor’s higher-
 | Fixed-point iterative schemes with applications to dynamical systems  | [Lecture](./materials/fixed_point_iterations.pdf)/ [Workshop](./materials/workshop_02.ipynb) |
 | Solutions to continuous dynamical systems | [Lecture](./materials/solution_ode.pdf)/ [Workshop](./materials/solution_ode.pdf) |
 | Euler's method and its application | [Lecture](./materials/euler_method.pdf)/ [Workshop](./materials/workshop_03.ipynb) |
-| Boundary-value problems for ordinary differential equations  | [Lecture](./materials/lecture_04.pdf)/ [Workshop](./materials/workshop_04.zip) |
-| Approximating eigenvalues   | [Lecture](./materials/lecture_05.pdf)/ [Workshop](./materials/workshop_05.ipynb) |
-| Contruction of bifurcations and phase planes of dynamical systems    | [Lecture](./materials/lecture_06.pdf)/ [Workshop](./materials/workshop_06.ipynb) |
+| Huen's method and its application | [Lecture](./materials/heun_method.pdf)/ [Workshop](./materials/workshop_04.ipynb) |
+| High-order Taylor method and its application | [Lecture](./materials/taylor_method.pdf)/ [Workshop](./materials/workshop_05.ipynb) |
+| Runge-Kutta method and its application | [Lecture](./materials/runge_kutta_method.pdf)/ [Workshop](./materials/workshop_06.ipynb) |
+| Approximating eigenvalues   | [Lecture](./materials/lecture_05.pdf)/ [Workshop](./materials/workshop_0x.ipynb) |
+| Contruction of bifurcations and phase planes of dynamical systems    | [Lecture](./materials/lecture_0x.pdf)/ [Workshop](./materials/workshop_06.ipynb) |
 | Case study I: Numerical methods in discrete dynamical systems | [Download](./materials/cases_discrete.zip)  |
 | Case study II: numerical methods in continuous dynamical systems | [Download](./materials/cases_continuous.zip)  |
 | Project-based Seminar I | TBA  |
